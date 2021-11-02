@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <h2>Computer Component Shop</h2>
+
+    <script>
+        var comp=prompt("Componet Name");
+
+        comp= comp.toUpperCase() // comp mai save karege ta uppercase value save hogi
+                                                            
+
+       
+
+        switch(comp){
+            case 'IC': alert("IC rate is 50Rs. per piece")  ;
+            break;
+            case 'RESISTANCE': alert("RESISTANCE rate is 5Rs. per piece");
+             break;
+            case 'BULB': alert("IC rate is 100Rs. per piece") ;
+            break;
+            case 'INDUCTOR': alert("IC rate is 5Rs. per piece") ;
+            break;
+            case 'CAPACITOR': alert("IC rate is 5Rs. per piece") ;
+            break;
+            case 'WIRE': alert("IC rate is 10Rs. per METER");
+             break;
+            default : alert(`${comp} is not available`); // `` use karte hai taaki + ka use ka karNA pade concatination k liye
+        }
+    </script>
+</body>
+</html>

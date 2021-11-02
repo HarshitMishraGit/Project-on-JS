@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+
+</head>
+
+<body>
+    <h2>Loops In JS</h2>
+
+    <script>
+
+        // for loop
+
+        for (i = 0; i < 10; i++) {
+            console.log("Namaste world")
+        }
+
+        // while loop
+
+        i = 0; //initialize variable
+
+        while (i < 10)// conditions in while loop separeted with ; if more than 1
+        {
+            console.log("Hello MoTo")// body
+            i++             // increment so that we can exit the loop
+
+        }
+        // here we initialize i two times but didn't get error
+        // becase i in the for loop is only define in the loop
+
+        // do...while loop
+
+        let j = 0;        //here if we intialize i again then we get the error
+        //so we have to initialize a new variable
+        do {
+            console.log("Nokia is better than iphone")
+            j++
+        }
+        while (j > 10);
+
+        // here even the condition in while is not satisfying
+        // It executed one time then check for the condition for next iteration
+
+        //for..in loop
+
+        //we have to define a object first ....It is like a box having diffrent things
+        // ans then we can access these thing using loop
+
+        let animal = {
+            name: "Zebra",// have look at the syntax 
+            legs: "4"
+        }
+        for (let key in animal) {
+            // console.log(key) // when we want to access the elements in object or dabba
+            console.log(key)
+           console.log( animal[key])
+        }
+    </script>
+</body>
+
+</html>
