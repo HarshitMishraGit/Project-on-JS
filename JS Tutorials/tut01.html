@@ -1,0 +1,84 @@
+<!-- Arrays And Objects in JS -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays And objects</title>
+</head>
+<body>
+    <p>This is Array and Objects in JS</p>
+
+    <script>
+        // Declare some variables 
+
+        let name="Harshit";
+        let age= 18;
+        let study= "B.tech";
+
+        // Now define an object
+
+        let object={
+            name: "Harshit",
+            age: 18,
+            slogan:"Its my life",
+            any: true,
+            
+        }
+        // check the output
+                console.log(object); 
+
+        // now check how to access the key in an object
+
+        console.log(object.age);
+        // getting output as 18
+        // there is one more method
+        // object['age'].........so you can also get output like 18
+
+        // now if you given spaces in your key then the second method only works
+        // Ex-
+
+        let object1={
+           " first name": "Harshit",
+           "last name":"Mishra",
+
+        }
+
+        // console.log(object1.first name);  it shows the error
+        console.log(object1['first name'])  // it is showing the correct ouput
+          
+
+        // Now Array
+
+        // declare a array- Two methods
+        // first thing to know that array is also a object
+
+        //let me=[1,2,12,4,"me"]        // we give any type of data in the array
+         let me=new Array(1,2,12,4,"me");   // same as other one.....new is a keyword
+        console.log(me);              // output giving the array as well as the type as array
+        
+    //    Sorting
+     me=me.sort(); // it is only compare first digit of the no. check it ones in your browser
+    console.log(me);
+
+
+    //lenght of array
+    console.log(me.length)       // output as 5
+
+        // how to push any element in array
+    me.push("hello"); // the pushed element allocated at the last in your array
+
+
+        // How to access a element in array
+    console.log(me[1]);// 2
+
+        // now define an array with some length
+    let you = new Array(20);
+    console.log(you);      // output is emptyx20 , type is array no doubt
+
+        
+    
+        
+    </script>
+</body>
+</html>
