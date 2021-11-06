@@ -1,0 +1,42 @@
+<!-- Functions in JS -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <p>Functions in JAVA SCRIPT</p>
+    <script>
+        // Declare a function
+
+        function name(){
+            // body
+            console.log("Welcome Back");
+        }
+        // A function never executes till it called
+        name();     //it shows output
+
+        // Some function print output according to input
+
+        function input(name){
+            console.log(name+ " , Kaise hai AAP");// one way to concatinate
+            console.log(`${name} kya kar rhe ho`);// another way to concatinate
+        }
+        input("Harshit");// function call
+
+        // some function returns the value as well
+
+        function add(a,b){
+            return a+b; 
+            console.log("Unreachable Comment");// never prints (Unreachable Line)
+        }
+
+        console.log(add(7,5));// function call and print in console
+        
+
+    </script>
+</body>
+</html>
