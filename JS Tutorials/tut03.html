@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert,promp and confirm</title>
+</head>
+<body>
+  <script>
+  // alert
+  alert("This is a alert massege") ; // syntax
+  //it opens a small window called modal window ----pehle isse nipto baad mai page par kuch karo
+  // Alert doesn't return anything
+
+  // prompt
+  let name= prompt("What is your name?","Guest");// first parameter is msg and second if defalut value in modal window
+  console.log(name);
+
+  // Confirm
+  let deletepic= confirm("Do you want to delete the photo");
+  console.log(deletepic);// for checking the value of deletepic
+  // it is returning value based on your selection
+  // true if you click ok and false if you click cancle
+  // now you can create a logic what to do if user click on ok or cancle
+  if(deletepic){
+    console.log("your photo is deleted");
+   }
+   else{
+     console.log("Your photo has not deleted");
+   }
+
+  </script>
+</body>
+</html>
