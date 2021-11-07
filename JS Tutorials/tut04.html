@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops </title>
+</head>
+<body>
+    <h2>Loops in JavaScript</h2>
+    <script>
+        // for loop
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+        // Use of for loop iterate in array
+        // Declare a array
+        let friends= new Array("Anubhav","Gaurav","Prabal","Abhinav");
+        console.log(friends);
+        console.log("----For Loop----");
+        for (let index = 0; index < friends.length; index++) {
+            let element = friends[index];
+            console.log(`Hello ${element}`)// output as ----Hello Anubhav, Hello Gaurav
+            
+        }
+        // this all is becomes easy if you use for each function which is introduced in modern JS
+        console.log("----ForEach Loop----");
+
+        friends.forEach(element => {
+            console.log(`Hello ${element}`)
+        });
+
+        // for of loop
+        console.log("----For Of Loop----");
+        for (const element of friends) {     // element is a keyword to access the data in array
+            console.log(`Hello ${element}`)
+        }
+
+        // now if you want to iterate in an object
+
+        let me={
+            name:"Harshit",
+            age:18,
+            college:"SIT"
+        }
+        console.log(me);// for checking the object
+
+        // we use for in loop to itrate in an object
+        console.log("----for in loop----")
+        for (key in me) {
+            
+               console.log(`Hello ${key}`)
+            }
+        
+        // While loop
+        console.log("----while loop----");
+        
+        let j=0;// initialize a variable
+        while (i<10) {
+            console.log(i);
+            i++;// if you don't give any increment or decrement then it will be a infinite loop
+            
+        }
+        
+        // do-while loop
+        console.log("----do while loop----");
+        let k=10;// initialization
+        do{
+            console.log(k);
+            console.log("It is in do while loop")
+            k++;
+        }while(k<5)
+        // although k=10 is greater than 5 but it prints once always then check for condṇ
+
+    </script>
+</body>
+</html>
