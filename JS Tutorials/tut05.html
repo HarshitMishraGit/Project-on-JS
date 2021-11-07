@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuplating DOM</title>
+</head>
+<body>
+    <!--Manuplating document object model -->
+    <!-- Dom is Nothing but our html code within body tag -->
+    <h2>Manuplating DOM in JavaScript</h2>
+    <div class="container" id="main">
+        <ul>
+            <li id="nav">menu</li>
+            <li>blog</li>
+            <li>status</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+        <div class="container">
+            <p>Second Container using Container Class</p>
+        </div>
+        
+        
+    </div>
+    <script>
+    // We can access html(Dom) Usong JS
+    // ------------Using Dom by id---------------
+    let main= document.getElementById('main');// grab a element by id
+    console.log(main);// it grab the element having id="main"
+
+    let nav= document.getElementById('nav');
+    console.log(nav);
+    // to access the hmtl inside the id
+    console.log(nav.innerHTML); // menu 
+
+    // to change the value of the html element
+    nav.innerHTML= "<li> menu changed </li>";
+
+    // now if we want to grab a element in DOM by class
+    let containers=document.getElementsByClassName('container'); // var can be anything but gebcn(class name mentioned in html code only)
+    console.log(containers);            // it shows htmlcollection which is somehow like array
+    console.log(containers[0]);         // sirst div accessed
+    console.log(containers[1]);         // second div accessed
+
+    // -----------CSS Selector--------------
+    // we can use css selector 
+    let sel= document.querySelector('.container'); // it select only first element having this class
+    console.log(sel);// it shows first div
+    // we can acess all elements having same class
+    let sell= document.querySelectorAll('.container');
+    console.log(sell);
+    console.log(sell[0]);// first div
+    console.log(sell[1]);// second div
+
+    let selll= document.querySelector('#nav');
+    console.log(selll)
+
+    // Again use same syntax for edit the value
+    selll.innerHTML="<li> Edit using css selector</li>"
+
+    </script>
+</body>
+</html>
