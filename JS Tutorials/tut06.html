@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JS</title>
+</head>
+<body>
+    <h2>Event listner</h2>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, hic atque corporis, et laborum voluptatibus aliquid magnam minus fugit repellendus quidem earum voluptas iure ducimus perspiciatis dignissimos maiores obcaecati nemo placeat consequatur? Velit, odit. Aut perferendis exercitationem, similique eos fugit molestias corporis hic, culpa esse possimus repellat fugiat explicabo, error beatae corrupti harum. Assumenda molestiae exercitationem quo cupiditate ratione vel doloremque aut aliquid inventore suscipit tempora repellendus omnis beatae sequi reiciendis cum non nesciunt doloribus, quaerat ducimus quibusdam totam. Qui eius iure quasi blanditiis cupiditate molestiae vero obcaecati, harum deserunt sunt velit quaerat voluptatum vel omnis saepe architecto quisquam sit magnam veritatis aperiam. Blanditiis delectus nulla eligendi ut impedit minus accusamus deserunt beatae molestias pariatur deleniti, sed facere est numquam sit quidem necessitatibus dolor rem esse eaque repellendus hic placeat labore? Omnis consequatur ab hic fuga earum magni voluptatibus harum explicabo officiis! Minus ipsa quisquam, iusto itaque nemo enim repudiandae dolorem autem, quae officia reprehenderit quia consequuntur aliquam! Cum recusandae fuga, facere fugiat vitae minima, ipsam velit explicabo voluptatem ab reprehenderit. Quibusdam reprehenderit minus, voluptate fuga quam recusandae laborum quisquam consectetur neque dicta deleniti excepturi est doloribus voluptas sed blanditiis animi ea. Mollitia ratione est voluptate maxime. Praesentium, architecto quam beatae vitae aperiam excepturi quasi minus veniam sit consequuntur voluptatibus rem natus non amet mollitia quaerat molestiae perferendis dolores. Aliquam nihil quis ab beatae ipsum, fuga alias veniam aut necessitatibus possimus blanditiis enim odit eaque assumenda! Laborum beatae mollitia odit unde et aut laboriosam distinctio voluptatem, voluptate excepturi obcaecati ut!</p>
+    <button id="btn" onclick="toggleHide()">show/hide</button>  
+    <!-- onclick defines if you click on the button then the purticular function in "... " runs -->
+
+    <script>
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+
+        // define the function which you gave in button tag
+        function toggleHide(){
+            if(para.style.display != 'none'){       // if display is not none means it is not hide
+                para.style.display='none';          // then if the function runs then it hide the para
+            }
+            else{
+                para.style.display='block';         // if upper condition is not true means it is already hide
+                                                    // then show the para that's why set diplay of para to block
+            }
+        }
+        // now the upper procedure you can access by adding an event listner
+
+        para.addEventListener('mouseover', function run() {
+            // add some function
+            console.log("mouse is inside the para");
+
+        });
+
+        para.addEventListener('mouseout', function run(){
+            // add some function when mouse gone out the para
+            console.log("Mouse went outside the para");
+        });
+
+        // suppose if you didn't use let para.document.getelementByID()
+        // And direct use eventlistner hisg possibility in modern browser that it grab your element 
+
+        // some of the events
+        // Browser Events:
+        // -----------Click---------if we click something
+        // -----------context menu-- if we click right button on mouse
+        // -----------mouseover/mouseout------courser hover over a content if in (over) if out(out)
+        // ----------mousedown/mouseup--------jab click dabaye rkhege(down) jab chorege (up)
+        // ----------mousemove----------------
+        // ---------DOMcontentLoaded----------jab page ki html load ho jayegi
+        // ---------TransitionEvent-----------css ki transition load ho jayegi
+        // Form Events:
+        // Submit
+        // focus
+
+    </script>
+</body>
+</html>
