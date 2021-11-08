@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout/ClearOut</title>
+</head>
+<body>
+    <div class="container">
+      <p>  This is a container</p>
+      <span id="time">
+         
+      </span>
+    </div>
+
+    <script>
+        // If you want a function to work time to time automatically you can you these fxn
+        // setTimeout--> allows you to run a fxn once over a interval of Time
+        // setInterval--> allows you to run a fxn repeatedly over a interval of Time
+
+        // declare a fxn 
+        function welcome(name){
+            console.log("welcome "+name);
+        }
+        // setTimeout will take only name of the fxn not fxn call syntax like : welcome()---is wrong  only welcome is correct 
+        setTimeout(welcome,3000,"Harshit");  // it run welcome fxn after of 1000ms or 1sec
+        // this fxn return to its unique id
+        // lets print its ID
+        timeout=  setTimeout(welcome,2000,"id of this fxn printed above"); 
+        console.log(timeout);// its id will be found to be 2 bcz we define another settimeout fxn above otherwise it will be 1
+        // what will be the id it returning is important to clear this automatic process
+        
+
+        // Say if you want to pop up a sign up window after 10 sec to user but user already sign in into your website 
+        // then you want to dicard that automatic pop up fxn 
+
+        clearTimeout(timeout);
+        // now first one setimeout is printing but the second one is dicard as cleartimeout has run
+
+        // setInterval
+        // setInterval(welcome, 1000);   // uncomment to check
+       // it continuously runs your fxn
+
+       interval=setInterval(welcome,1000,"Harshit");
+        // now interval is returning to a unique id by which we can discard this fxn
+
+        clearInterval(interval);// it discard the above fxn 
+
+        // Now lets make a clock with the help of setInterval fxn
+
+        // Display time
+
+        function displaytime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displaytime,1000);
+
+    </script>
+</body>
+</html>
