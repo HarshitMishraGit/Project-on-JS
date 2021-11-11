@@ -10,7 +10,7 @@ console.log(text);
 text = text.replace("HELLO", "HEY GUYS");
 console.log(text);// for checking the output 
 // save to another file
-fs.writeFileSync("sample1.txt",text);// saving to another file
+fs.writeFileSync("sample1.txt", text);// saving to another file ("newFileName",Format In Which You Want To Save)
 
 
 
