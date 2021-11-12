@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <h2>arrow function</h2>
+
+    <script>
+        // Declare a function
+        function hey(){
+            console.log("Hey,Whats up guys");
+        }
+        hey();//function call
+
+        // Arrow function
+
+        hello=() =>{
+            console.log("This is a arrow function");
+        }
+        hello();//function call
+        
+        // if you have some argumnts 
+        let a=10;
+        let b=20;
+        
+        // a and b below is only partial parameter not real paramerter
+        hello1=(a,b) =>{
+            console.log("This is a arrow function having argument "+"a="+a+" b="+b);
+        }
+        hello1(a,b);//function call with arguments
+        
+        // If you have only one parameter then no need to give ()
+        
+        hello1= a =>{
+            console.log("This is a arrow function having only one argument "+"a="+a);
+        }
+        hello1(a);//function call with arguments
+        
+        // if you don't have a multiline code
+        hello1= a => console.log(a/2)
+        hello1(a);//function call with arguments
+        
+    </script>
+
+
+</body>
+</html>
