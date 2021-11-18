@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h2>JSON utility in JavaScript</h2>
+
+    <script>
+
+        // Let declare an onject
+        let obj={
+            name:"Harshit",
+            friend:"Anubhav",
+            food:"Strawberry",
+            age :18 
+        }
+        console.log(obj);// simple object
+
+        // Declare a variable to take your code as a stringified json file
+
+        let myJson= JSON.stringify(obj);
+        console.log(myJson);// getting same onject as a string
+
+        // now let's perform some string operations
+
+        myJson=myJson.replace("Harshit","Harshit Mishra");
+        console.log(myJson);// it replaced name 
+
+        // Now get our original object back in js format
+        
+        let myJsonObj=JSON.parse(myJson);
+        console.log(myJsonObj);//getting the same o/p as obj 
+
+        // Now we can easily share our code as a string and then parse it to get the original code
+        // parse fxn is only work for a valid json file only 
+
+    </script>
+</body>
+</html>
