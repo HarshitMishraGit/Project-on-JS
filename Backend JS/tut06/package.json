@@ -1,0 +1,17 @@
+{
+  "name": "first_app",
+  "version": "1.0.0",
+  "description": "This is the first website using Node.Js packages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "author": "Harshit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+  
+}
