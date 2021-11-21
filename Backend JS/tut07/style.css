@@ -6,4 +6,20 @@ h1{
     text-align: center;
     color: red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    text-align: center;
+    margin: 16px;
+    background-color: blanchedalmond;
+    padding: 12px 26px;
+    border-radius: 16px;
+}
+.container{
+    margin: 0;
+    padding: 0;
+   
+    align-items: centre;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
