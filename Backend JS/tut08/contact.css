@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background-color: rgb(221 233 218);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 11px 32px;
+
+}
+input{
+    width: 60%;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-style: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: grey 4px 5px;
+
+}
+.btn{
+    width: 5%;
+    margin: auto;
+    padding: 3px 12px;
+    background-color: #cb63d7;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+}

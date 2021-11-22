@@ -1,0 +1,27 @@
+//- filling the contents of the base template 
+extends base.pug
+
+//- <<---------------------------------Fill all block one by one ------------------------------>>
+
+//- you can add multiple css files also 
+//- This css file is for your basic templet design
+block style 
+     style
+       include ../home.css
+       include ../contact.css
+
+block content 
+ .container
+   h1 Contact US 
+  
+   form(action="/contacts", method="post") 
+    input(type="text" name="name" id="name" placeholder="Enter your name")
+    input(type="text" name="father" id="father" placeholder="Enter your father's Name")
+    input(type="email" name="email" id="email" placeholder="Enter your email")
+    input(type="text" name="mobile" id="mobile" placeholder="Enter your mobile no.")
+    button(type="submit").btn Sumbit 
+  
+
+
+
+

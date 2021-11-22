@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+        margin: 0;
+        height: 96vh;
+
+}
+
+#nav{
+    background-color: rgb(142 209 237);
+    
+}
+#nav>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style: none;
+    padding: 14px 31px;
+
+}
+#nav>ul>li{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#nav>ul>li>a{
+text-decoration: none;
+color: rgb(148, 36, 148);
+
+}
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#footer>p>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
