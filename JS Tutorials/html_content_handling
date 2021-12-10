@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+
+        <p>Hello What are you doing?</p>
+        <p class="btn">
+
+        <button id="jun">
+            Press me
+        </button>
+        </p>
+    </div>
+
+    <script>
+        // JS ki help se html k content ko kaise handle karege 
+        //first of all hm btn ko id se tackle karege 
+        btn=document.getElementById('jun');
+        // ab hm btn k parent node yani ki p tag then uske bhi parent tag yani ki div mai jayege
+        console.log(btn.parentNode.parentNode);
+        let jj=btn.parentNode.parentNode;
+        
+        let p=jj.getElementsByTagName('p')[0].innertext;
+        console.log(p);
+        
+        
+        // innertext yaha par camel case mai nahi hai isiliye kaam nahi karega 
+        // it should be in innerText so that it is working properly 
+
+
+        // and one more thing is that getElementsByTagName mai Elements hota hai jabki or sabme Element hota hai 
+        console.log(jj.getElementsByTagName('p')[0].innertext);
+        let y=jj.getElementsByTagName('p')[0];
+        console.log(y);
+        // yha par sab kuch sahi hai that's why it works well
+        let z=jj.getElementsByTagName('p')[0].innerText;
+        console.log(z)
+        
+        
+
+    </script>
+</body>
+</html>
