@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="  h-4 border border-red-700 p-5 flex justify-between ">
+
+        <div class="flex justify-between space-x-3 flex-center items-center">
+            <a href="#">features</a>
+            <a href="#">About</a>
+        </div>
+        
+        <div class="hidden sm:flex justify-between space-x-3 items-center">
+            <a href="#">login</a>
+            <a href="" class=" bg-yellow-300 text-yellow-900 p-2 rounded py-1 hover:bg-yellow-200" >SignUp</a>
+        </div>
+        
+   
+    <!-- mobile menu  -->
+    <div class="sm:hidden flex items-center">
+    <button class="btn">
+        menu
+    </button>
+    </div>
+    
+   
+       
+    </div>
+
+    <div class="hidden sm:hidden menu-items ">
+        <a href="#" class="block text-center">login</a>
+        <a href="" class="block bg-yellow-300 text-yellow-900 p-2 rounded py-1 hover:bg-yellow-200 text-center" >SignUp</a>
+       
+    </div>
+    <!-- <button class="btn">Click here</button>
+
+    <div class="cont hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam excepturi itaque autem tempore incidunt reiciendis illo sed dolorum, quia nam illum commodi impedit cumque corrupti veniam dolorem quod eligendi voluptatum tempora, laudantium, vel aliquid? Magni eaque nostrum aspernatur minima quis! Porro, perspiciatis iure, reiciendis modi tenetur soluta tempore dolores officiis amet error natus alias molestias consectetur illum ea perferendis accusamus atque aut? Fugiat omnis blanditiis deserunt quas reiciendis nobis, soluta culpa, magnam deleniti, mollitia tempora numquam repellat aliquam libero. Veniam, qui! A doloribus inventore enim, quidem quam distinctio modi nihil fugit at placeat sint. Cum mollitia adipisci repudiandae voluptates animi.</div>
+      </div> -->
+        <script>
+       let btn=document.querySelector('button.btn')
+       let menu=document.querySelector('.menu-items')
+          btn.addEventListener('click',()=>{
+              menu.classList.toggle('hidden');
+          })
+     </script>
+</body>
+</html>
